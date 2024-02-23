@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Position</title>
+    <style>
+      .relative {
+        position: relative;
+        /* it go right 100px from it's normal position and 50px from top*/
+        right: 100px;
+        top: 50px;
+        width: 100px;
+        background-color: rgb(14, 121, 214);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <strong
+        >An element with position: relative; is positioned relative to its
+        normal position.</strong
+      >
+    </p>
+    <p>
+      Setting the top, right, bottom, and left properties of a
+      relatively-positioned element will cause it to be adjusted away from its
+      normal position. Other content will not be adjusted to fit into any gap
+      left by the element.
+    </p>
+    <div class="relative">Relative</div>
+    <p>
+      An element with position: static; is not positioned in any special way; it
+      is always positioned according to the normal flow of the page:
+    </p>
+  </body>
+</html>

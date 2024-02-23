@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Position</title>
+    <style>
+      .ancestor {
+        /* here parent is positioned to relative */
+        position: relative;
+        border: 2px solid blue;
+        height: 300px;
+        width: 300px;
+      }
+      .absolute {
+        /* absolute position follow it's ancesotr or parent position.if parent is not positioned, then it positioned relative to the screen like viewport. it doesn't create any gap. overlap content*/
+        position: absolute;
+        /* left: 50px; */
+        top: -50px;
+        right: -50px;
+        width: 50px;
+        padding: 10px;
+        background-color: cadetblue;
+      }
+      .box {
+        width: 100px;
+        height: 50px;
+        background-color: bisque;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed).
+    </p>
+    <p>
+      However; if an absolute positioned element has no positioned ancestors, it
+      uses the document body, and moves along with page scrolling.
+    </p>
+    <div class="ancestor">
+      <div>Ancestor positioned with relative</div>
+      <div class="absolute">absolute</div>
+    </div>
+    <p>
+      Note: Absolute positioned elements are removed from the normal flow, and
+      can overlap elements.
+    </p>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+  </body>
+</html>

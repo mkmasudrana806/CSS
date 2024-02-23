@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Position</title>
+    <style>
+      .parent {
+        width: 300px;
+        height: 300px;
+        border: 2px solid indianred;
+      }
+      .sticky {
+        margin-bottom: 10px;
+        padding: 30px;
+        margin: 10px;
+        position: sticky;
+      }
+      .box1 {
+        background-color: burlywood;
+        top: 10px;
+      }
+      .box2 {
+        background-color: rgb(5, 94, 226);
+        top: 50px;
+      }
+      .box3 {
+        background-color: rgb(248, 142, 3);
+        top: 100px;
+      }
+      .box {
+        width: 100px;
+        height: 50px;
+        background-color: bisque;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      An element with position: sticky; is positioned based on the user's scroll
+      position.
+    </p>
+
+    <p>
+      A sticky element toggles between relative and fixed, depending on the
+      scroll position. It is positioned relative until a given offset position
+      is met in the viewport - then it "sticks" in place (like position:fixed).
+    </p>
+    <p>
+      In this example, the sticky element sticks to the top of the page (top:
+      0), when you reach its scroll position.
+    </p>
+    <div class="parent">
+      <div class="sticky box1">Box1</div>
+      <div class="sticky box2">Box2</div>
+      <div class="sticky box3">Box3</div>
+    </div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+    <div class="box">box-1</div>
+  </body>
+</html>

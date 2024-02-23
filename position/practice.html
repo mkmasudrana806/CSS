@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Practice</title>
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      border: 1px solid rebeccapurple;
+      overflow: hidden;
+      z-index: 0;
+    }
+    img {
+      width: 100%;
+      opacity: 0.5;
+      height: auto;
+      z-index: 1;
+    }
+    .text {
+      position: absolute;
+      /*below property set left right corner*/
+      /* left: 0px;
+      top: 0px; */
+
+      /*below property set left right corner*/
+      /* right: 0px;
+      top: 0px; */
+
+      /*below property set left right corner*/
+      right: 0px;
+      bottom: 0px;
+
+      /*below property set left right corner*/
+      left: 0px;
+      bottom: 0px;
+
+      padding: 0px;
+      margin: 0px;
+      z-index: 2;
+    }
+    .index {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      background-color: rgb(221, 126, 10);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img src="download.jpg" alt="a nature image" />
+      <p class="text">Text to position</p>
+      <div class="index">z-index</div>
+    </div>
+  </body>
+</html>
