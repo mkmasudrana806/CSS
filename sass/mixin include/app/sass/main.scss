@@ -91,3 +91,11 @@
     color: green;
   }
 }
+
+// @while loop
+@while $i < 13 {
+  .col-#{$i} {
+    width: 100px;
+  }
+  $i: $i + 1;
+}
