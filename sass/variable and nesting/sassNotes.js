@@ -1,3 +1,29 @@
+/* Install SASS on our machine steps by steps
+
+-- wih npm 
+command: npm i -g sass
+structure: sass source_scss_file destination_css_file(where want to put converted css files)
+command: sass sass/style.scss css/style.css
+command: sass sass/style.scss css/style.css --watch (here --watch run this command as watch mode)
+=> now this sass file will be automatically generated into the destination directory as .css file
+=> now include this generated css into html file
+
+
+------------ with extension (recommended way). vendor prefix will be automatically generated for browsers compatibility like -ms- or -webkit-
+
+install extension: live sass compiler
+configure extension: 
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false or true,
+*/
+
 /*
 => SASS is a syntactic awesome stylesheet
 => sass also css pre-processor
@@ -43,6 +69,8 @@ body{
 }
 
 ---------- @import and partials (DRY = Don't repeat yoursefl)
+Note: @import is deprecated: @use and @forward is recommended
+
 _variables.scss file. use underscore to avoid compiled this file into css. as we have use this into .scss file.
 $font-size: 12px;
 $font-weight: normal;
@@ -152,3 +180,4 @@ $primary: red;
 there are many built-in functions:
 string, numeric, list, map, selector, introspection, color
 
+*/
