@@ -22,6 +22,7 @@ configure extension:
     }
   ],
   "liveSassCompile.settings.generateMap": false or true,
+  set true to generate source map file which will helps in debugging
 */
 
 /*
@@ -70,6 +71,13 @@ body{
 
 ---------- @import and partials (DRY = Don't repeat yoursefl)
 Note: @import is deprecated: @use and @forward is recommended
+@forward: we can have access to all css code
+@use : we can use only those properties that we need actually. need to use like 
+@use "index"; or we can customize name @use "index" as util; now util.$primary-color;
+
+div{
+    background-color: index.$primary-color;
+}
 
 _variables.scss file. use underscore to avoid compiled this file into css. as we have use this into .scss file.
 $font-size: 12px;

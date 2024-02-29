@@ -1,0 +1,19 @@
+// @forward "./partials/reset";
+// @forward "./partials/typography";
+
+// instead we can @forward single file. take a _index.scss file, then import all the partials inside there then this index.scss file @forward here
+@forward "./partials//index";
+@use "./util/variables" as util;
+
+header {
+  background-color: util.$primary-bg;
+  padding: 10px;
+}
+
+main {
+  background-color: orange;
+  padding: 10px;
+  h3 {
+    color: util.$primary-color;
+  }
+}
