@@ -62,3 +62,32 @@
   @extend .input;
   color: blue;
 }
+
+// blogs
+// each blog color using @each iterator
+@each $color in green, blue, indigo, gray, red {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+// @for loop
+@for $variable from 1 to 12 {
+  .col-#{$variable} {
+    color: green;
+  }
+}
+
+// @for loop using to (end excluded)
+@for $variable from 1 to 12 {
+  .col-#{$variable} {
+    color: green;
+  }
+}
+
+// @for loop using through(end included)
+@for $variable from 1 to 12 {
+  .col-#{$variable} {
+    color: green;
+  }
+}
