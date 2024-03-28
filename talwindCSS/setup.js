@@ -78,7 +78,7 @@ or use @layer components
 }
 
 
-######### base layer ########
+#########  @layer base ########
 Note: tailwind reset browser default style to zero. 
 that's why a h1 and p looks same when we use them in our project.
 we can override these @tailwind base; style using
@@ -93,7 +93,7 @@ we can override these own and tailwind style. both overridalbe.
 
 
 
-############ utilities layer #########
+############  @layer utilities #########
 Note: we can write our own CSS code to make own utility class using @layer utilities. both is overridable
 
 ex:   <button class="btn rounded-lg btn-purple">Visit now</button>
@@ -105,4 +105,9 @@ tailwind.css:
         color: gray;
     }
 }
+
+
+########### @responsive and @screen #########
+make some class for all responsive breakpoints
+
 */

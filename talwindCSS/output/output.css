@@ -757,10 +757,19 @@ h1 {
 
 /* base layer */
 
+/* variant  */
+
+/* @responsive directives  */
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:my-rotate:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 @media (min-width: 640px) {
